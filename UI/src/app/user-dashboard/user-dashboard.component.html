@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css"/>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark">
+  <h1 class="navbar-brand" class="logo"><b>DIY<span>POPUPS'</span></b></h1>
+
+  <ul class="navbar-nav">
+    
+    <li class="nav-item">
+        <div class="search-container">
+            <form action="/action_">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit" class="nav-item"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+          </div>   </li>
+    
+    <li class="nav-item">
+        <button class="nav-link" id="logout" routerLink="/login">LOGOUT</button>
+      </li>
+    <li class="nav-item">  <span class="glyphicon glyphicon-user" ></span></li>
+<button style="font-size:30px;cursor:pointer;right: 0;margin-left: 20px;margin-right: 5px;" (click)="openNav()">&#9776; </button>
+</ul>
+</nav>
+
+<div class="container-fluid" id="main" style="width:500px;">
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators" >
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1" class="active"></li>
+      <li data-target="#demo" data-slide-to="2"class="active"></li>
+      <li data-target="#demo" data-slide-to="3" class="active"></li>
+      <li data-target="#demo" data-slide-to="4" class="active"></li>
+      <li data-target="#demo" data-slide-to="5"class="active"></li>
+
+    </ul>
+    <div class="carousel-inner"> 
+      <div class="card img-fluid carousel-item active " style="width:500px">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="Los Angeles" width="500" height="200">
+        <div class="card-img-overlay">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>  
+      </div>
+      <div class="card img-fluid carousel-item" style="width:1200px">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Chicago" width="500" height="200">
+        <div class="card-img-overlay"> 
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>   
+      </div>
+      <div class="card img-fluid carousel-item" style="width:500px">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(128).jpg" alt="New York" width="1100" height="500">
+        <div class="card-img-overlay">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>  
+      </div>
+      <div class="card img-fluid carousel-item" style="width:500px">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(127).jpg" alt="New York" width="1100" height="500">
+          <div class="card-img-overlay">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>   
+        </div><div class="card img-fluid carousel-item"  style="width:500px">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(126).jpg" alt="New York" width="1100" height="500">
+            <div class="card-img-overlay">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>  
+          </div><div class="card img-fluid carousel-item" style="width:500px">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(125).jpg" alt="New York" width="1100" height="500">
+              <div class="card-img-overlay">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">Some example text.</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>   
+            </div>
+    </div> 
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div></div>
+
+
+
+
+
+
+
+
+      <!-- <div class=" container">
+          <div class="row">
+              <div class="col-12 text-right mb-4">
+                  <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                  <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+              </div>
+          </div>
+      </div> -->
+      <div class="container p-t-0 m-t-2 carousel-inner" style="margin-top: 100px;">
+          <div class="row row-equal carousel-item active m-t-0">
+              <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="Carousel 1">
+                      </div>
+                      <div class="card-block p-t-2">
+                          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="Carousel 1">
+                      </div>
+                      <div class="card-block p-t-2">
+                          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="Carousel 1">
+                      </div>
+                      <div class="card-block p-t-2">
+                          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                      </div>
+                  </div>
+              </div>
+              
+              
+          </div>
+         
+      </div>
+  
+  
+
+
+<div id="mySidenav" class="sidenav" >
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#">Profile</a>
+  <a href="#">Credits</a>
+      <a href="#">Contact</a>
+</div>
+
+
+
+</body>
+</html>
